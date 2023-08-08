@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>เว็บไซต์สวยๆเข้าสู่ระบบและลงทะเบียน</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+            background-image: url("xnx.jpg");
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 10px;
+    }
+
+    input {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 5px;
+      background-color: #4caf50;
+      color: #ffffff;
+      border: none;
+      border-radius: 1px;
+      cursor: pointer;
+    }
+
+    .error {
+      color: #ff0000;
+    }
+
+    .success {
+      color: #00cc00;
+    }
+
+    .login-form {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>เข้าสู่ระบบ</h1>
+    <div class="login-form">
+      <form>
+        <label for="username">ชื่อผู้ใช้:</label>
+        <input type="text" id="username" required>
+
+        <label for="password">รหัสผ่าน:</label>
+        <input type="password" id="password" required>
+
+        <button type="button" onclick="login()"><a href="opak.html">เข้าสู่ระบบ</a></p>
+        <p class="error" id="login-error"></p>
+      </form>
+    </div>
+    <p>ยังไม่มีบัญชีผู้ใช้? <a href="pan.html">ลงทะเบียน</a></p>
+      </form>
+    </div>
+  </div>
+  </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>หน้าเว็บเคลื่อนไหวภาพ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("011.jpg");
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="001.jpg" alt="ภาพที่ 1">
+        <img src="002.png" alt="ภาพที่ 2">
+        <img src="003.jpg" alt="ภาพที่ 3">
+        <img src="004.jpg" alt="ภาพที่ 4">
+        <img src="005.jpg" alt="ภาพที่ 5">
+        <img src="006.jpg" alt="ภาพที่ 6">
+        <!-- เพิ่มภาพตามต้องการ -->
+    </div>
+
+    <script>
+        // ไม่จำเป็นต้องใช้ JavaScript ถ้าต้องการแสดงรูปภาพเป็นระเบียบเสมอ แต่ถ้าต้องการให้มีการเคลื่อนไหวเมื่อ hover สามารถใช้ JavaScript ดังนี้
+        const images = document.querySelectorAll('.gallery img');
+        images.forEach(image => {
+            image.addEventListener('mouseover', () => {
+                image.style.transform = 'scale(1.2)';
+            });
+
+            image.addEventListener('mouseout', () => {
+                image.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
